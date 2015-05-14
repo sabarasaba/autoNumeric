@@ -949,7 +949,7 @@
                             $this[0].value = settings.aSign;
                             setValue = false;
                         }
-                        if (setValue && $this[0].value === $this.prop('defaultValue')) {
+                        if (setValue !== "" && setValue && $this[0].value === $this.prop('defaultValue')) {
                             $this.autoNumeric('set', $this.val());
                         }
                     }
